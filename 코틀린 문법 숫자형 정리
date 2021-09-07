@@ -1,0 +1,15 @@
+
+// 4.5.1 숫자형
+//·Double : 64비트 부동소수점
+//·Float : 32비트 부동소수점
+//·Long : 64비트 정수
+//·int : 32비트 정수
+//·Short : 16비트 정수
+//·Byte : 8비트 정수
+// 리터널이란 자료형을 알 수 있는 표기 형식을 말합니다. 리터널에 따라 자료형을 추론한다.
+
+val a = 10    // val a: Int
+val b = 10L   // val b: Long
+val c = 10.0  // val c: Double
+val d = 10.0f // val d: Float
+// 자료형의 리터널
