@@ -1,0 +1,25 @@
+import java.util.Collections.max
+
+// 4.6.1 if문
+// 실행할 문장이 한 줄이면 블록을 생략할 수 있다.
+
+val a = 10
+val b = 20
+
+// 일반적인 방법
+
+var max = a
+if (a < b) max = b
+
+
+// if - else문의 사용법도 자바와 완전히 같다.
+
+if (a > b){
+    max = a
+} else{
+    max = b
+}
+// 다음과 같이 if문을 식처럼 사용할 수도 있다.
+/*
+val max = if ( a > b)  else b
+ */
