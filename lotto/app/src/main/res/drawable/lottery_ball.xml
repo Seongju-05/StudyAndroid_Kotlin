@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        // lotte_ball 크기와 색깔 설정
+        <shape android:shape="oval">
+            <stroke android:width="4dp" android:color="@color/ballstroke"/>
+            <solid android:color="@color/ballSolid"/>
+        </shape>
+    </item>
+</selector>
