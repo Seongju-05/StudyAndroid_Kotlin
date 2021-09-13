@@ -1,0 +1,22 @@
+// 4.6.4v while
+// while문은 주어진 조건이 참일때 반복하는 문법이다.
+// while문의 변형으로는 무조건 한번은 실행되는 do while문이 있다.
+// 코틀린의 while문과 do - while문은 자바와 동일하다.
+
+/*
+// while
+var x = 10
+println(x)
+while (x > 0){
+    x--
+    println(x) // 9; 8; 7; 6; 5; 4; 3; 2; 1; 0;
+}
+ */
+
+// do while
+
+var x = 10
+do {
+ x--
+ println(x)
+} while (x > 0)
