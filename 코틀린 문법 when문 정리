@@ -1,0 +1,40 @@
+// 4.6.2 when
+// when문은 자바의 switch문에 대응한다.
+// 값이 하나인 경우는  물론 콤마(.)나 in 연산자로 값의 범위를 자유롭게 지정하는것이 특징
+// 그밖의 경우 else를 사용하여 나ㅓㅁ지에 대한 경우를 처리한다.
+
+/*
+val x = 1
+
+when(x) {
+    1 -> println("x == 1")   // 값 하나
+    2, 3 -> println("x == 2 or x == 3")    //여러 값은 콤마로
+    in 4..7 -> println("4 부터 7까지")    // in 연산자로 범위 지정
+    !in 8..10 -> println("8부터 10사이가 아님")
+    else -> {
+        print("x는 1이나 2가 아님")
+    }
+}
+ */
+
+// when문 역시 if문과 마찬가지로 사용할 수 있다.
+
+/*
+val numberStr = 1
+
+val numStr = when (number %2)
+{
+    0 -> "짝"
+    else     -> "홀"
+}
+ */
+
+// when문의 결과를 함수의 변환값으로 사용할 수도 있다.
+
+val number = 1
+fun isEven(num: Int) = when (num % 2) {
+    0 -> "짝"
+    else -> "홀"
+}
+
+println(isEven(number))
