@@ -1,0 +1,28 @@
+// 4.7.2 생성자
+// 이코드는 name 파라미터를 받는 생산자를 가지는 클래스이다.
+
+//코틀린에서의 클래스
+class Person(var name: String) {
+
+}
+
+// 생성자에서 초기화 크드를 작성하려면 다음과 같이 constructor로 생성자를 표현한다.
+
+class Person
+{
+    constructor(name: String)
+    {
+        println(name)
+    }
+}
+
+// 코틀린에서는 생성자 이외에도 init 블록에 작성한 코드가 클래스를 인스턴스화 할때
+// 가장 먼저 초기화 된다.
+
+class Person(name: String)
+{
+    init
+    {
+        println(name)
+    }
+}
