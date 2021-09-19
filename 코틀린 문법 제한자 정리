@@ -1,0 +1,17 @@
+//4.7.4 접근 제한자
+// 접근제한자랑 변수나 함수를 공개하는 데 사용하는 키워드 입니다.
+
+/*
+public (생략가능) : 전체 공개이다. 아무것도 안쓰면 기본적으로 public이다.
+private : 현재 파일 내부에서만 사용할 수 있다.
+internal : 같은 모듈 내에서만 사용할 수 있다.
+protected : 상속받은 클래스에서 사용할 수 있다.
+ */
+
+class A
+{
+    val a = 1; // public
+    private val b = 2
+    protected val c = 3
+    internal val d = 4
+}
