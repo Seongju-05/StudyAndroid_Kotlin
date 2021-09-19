@@ -1,0 +1,28 @@
+// 4.7.5 클래스 상속
+// 코틀린에서의 클래스는 기본적으로 상속이 금지되어있다.
+// 상속이 가능하게 하려면 open 키워드를  클래스 선언 앞에 추가해야한다.
+
+// 다음 Animal 클래스를 상속 받는 Dog 클래스를 나타낸다.
+
+open class Animal
+{
+
+}
+
+class Dog : Animal()
+{
+
+}
+
+// 만약 상속 받을 클래스가 생성자를 가지고 있다면 다음과 같이 상속 받을 수 있다.
+
+open class Animal(val name : String)
+{
+
+}
+
+class Dog(nmae : String) : Animal(name)
+{
+
+}
+
