@@ -1,0 +1,37 @@
+// 4.8.3 상속과 인터페이스를 함께 구현
+// 상속은 하나의 클래스만 상속 할 수 있는 반면 인터페이스는 콤마로 구분하여 여러 인터페이스를
+// 동시에 구현할 수 있다.
+// 다음과 같이 상속과 인터페이스를 함께 구현할 수 있다.
+
+open class Animal
+{
+
+}
+
+interface Runnable
+{
+    fun run()
+
+    fun fastRun() = println("빨리 달린다.")
+}
+
+interface Eatable
+{
+    fun eat()
+}
+
+class Dog : Animal(), Runnable, Eatable
+{
+    override fun eat() {
+        println("먹는다")
+    }
+
+    override fun run()
+    {
+        println("달린다")
+    }
+}
+
+val dog = Dog()
+dog.run()
+dog.eat()

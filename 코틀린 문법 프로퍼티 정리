@@ -1,0 +1,42 @@
+// 4.7.3 프로퍼티
+// 클래스의 속성을 사용할 때는 멤버에 직접 접근하며 이를 프로퍼티라고 한다.
+// 프로퍼티에 값ㅇ르 쓰려면 = 기호로 값을 대입해야한다.
+// 값을 읽을 때는 프로퍼티를 참조한다.
+// 코틀린에서는 속성에 값을 설정하거나 얻으려면 게터(getter)/ 세터(setter) 메서드 없이 바로 점을 찍고
+// name = 프로퍼티에 접근할 수 있다.
+// 다음 코드에서 Person 클래스는 name 프로퍼티를 가지고 있다.
+
+// 클래스 선언
+class Person( var name: String)
+{
+
+}
+
+//인스턴스 생성
+
+val person = Person(" 멋쟁이 ")
+person.name = "카리나"  // 쓰기
+println(person.name) // 읽기
+
+// 자바에서의 클래스
+/*
+Class Person
+{
+    private String name;
+
+    public Person (String name)
+    {
+    this.name = name;
+    }
+
+    public String getName()
+    {
+       return name;
+    }
+
+    public void setName(String name)
+    {
+    this.name = name;
+    }
+}
+ */
