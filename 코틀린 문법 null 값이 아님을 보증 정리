@@ -1,0 +1,11 @@
+// 4.9.4 null 값이 아님을 보증(!!)
+// 변수 뒤에 !!를 추가하면 null값이 아님을 보증하게 된다.
+// 다음과 같이 null값이 허용되는 name 변수의 경우 String? 타입이기 때문에 String 타입으로 변환하면
+// !!를 붙여서 null값이 아님을 보증해야 한다.
+
+val name: String? = "빛나리"
+
+val name2: String = name // 에러
+val name2: String? = name // Ok
+
+val name4: String = name!! // Ok
