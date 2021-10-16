@@ -1,0 +1,12 @@
+// 4.9.5 안전한 호출(?.)
+// 메서드 호출 시 점ㆍ 연산자 대신?. 연산자를 사용하면 null값이 아닌 경우에만 호출됩니다.
+// 다음 코드는 str 변수의 값이 null값이 아니라면 대문자로 변경하고,
+// null값이라면 null을 변환합니다.
+
+val str : String? = null
+
+var upperCase = if (str != null) str else null // null
+// ->
+upperCase = str?.toUpperCase()
+
+// 안전 호출을 사용하며녀 복잡한 if 문을 한 줄로 줄일 수 있다.
