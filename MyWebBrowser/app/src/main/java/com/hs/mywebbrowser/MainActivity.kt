@@ -4,8 +4,11 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
+import android.view.ContextMenu
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.webkit.WebView
 import android.webkit.WebViewClient
@@ -41,6 +44,8 @@ class MainActivity : AppCompatActivity() {
                 false
             }
         }
+        // 컨텍스트 메뉴 등록
+        registerForContextMenu(binding.webView)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -54,14 +59,17 @@ class MainActivity : AppCompatActivity() {
                 binding.webView.loadUrl("http://www.google.com")
                 return true
             }
+
             R.id.actoin_naver,R.id.action_home -> { // 네이버를 클릭하면 네이버 페이지를 로딩한다.
                 binding.webView.loadUrl("http://www.naver.com")
                 return true
             }
+
             R.id.action_daum,R.id.action_home -> { // 다음을 클릭하면 다음 페이지를 로딩한다.
                 binding.webView.loadUrl("http://www.daum.com")
                 return true
             }
+
             R.id.action_call -> { // 연락처를 클릭하면 전화 앱을 연다. 이러한 방식을 암시적 인텐트라고 한다.
                 val intent = Intent(Intent.ACTION_DIAL)
                 intent.data = Uri.parse("tel:031-123-4567")
@@ -70,12 +78,24 @@ class MainActivity : AppCompatActivity() {
                 }
                 return true
             }
+
             R.id.action_send_text -> { // 문자 보내기 코드를 작성한다.
                 // 문자 보내기
                 return true
             }
+
             R.id.action_email -> { // 이메일 보내기 코드를 작성한다.
                 //이메일 보내기
+                return true
+            }
+
+            R.id.action_share -> {
+                // 페이지 공유
+                return true
+            }
+
+            R.id.action_browser -> {
+                // 기본 웹 브라우저에서 열기
                 return true
             }
         }
@@ -83,6 +103,13 @@ class MainActivity : AppCompatActivity() {
         // super 메서드를 호출하는 것이 안드로이드 시스템에서의 보편적인 규칙이다.
     }
 
-
+    override fun onCreateContextMenu(
+        menu: ContextMenu?,
+        v: View?,
+        menuInfo: ContextMenu.ContextMenuInfo?
+    ) {
+        super.onCreateContextMenu(menu, v, menuInfo)
+        menuInflater.inflate(R.menu.context, menu)
+    }
 }
 
