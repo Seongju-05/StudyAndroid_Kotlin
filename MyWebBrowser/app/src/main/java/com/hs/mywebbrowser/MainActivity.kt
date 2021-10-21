@@ -81,21 +81,24 @@ class MainActivity : AppCompatActivity() {
 
             R.id.action_send_text -> { // 문자 보내기 코드를 작성한다.
                 // 문자 보내기
+                sendSMS("031-123-4567",binding.webView.url)
                 return true
             }
 
             R.id.action_email -> { // 이메일 보내기 코드를 작성한다.
                 //이메일 보내기
+                email("test@example.com", "좋은 사이트", binding.webView.url)
                 return true
             }
 
             R.id.action_share -> {
                 // 페이지 공유
-                return true
+                share(binding.webView.url)
             }
 
             R.id.action_browser -> {
                 // 기본 웹 브라우저에서 열기
+                browse(binding.webView.url)
                 return true
             }
         }
