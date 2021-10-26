@@ -1,0 +1,8 @@
+// 4.12.3 형체크
+// is 키워드를 사용하여 형을 체크할 수 있다. 자바의 instanceOf
+
+val str = "hello"
+
+if(str is String) { // str이 String형이라면
+    println(str.toUpperCase())
+}
