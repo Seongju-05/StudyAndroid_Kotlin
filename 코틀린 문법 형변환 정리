@@ -1,0 +1,25 @@
+// 4.12.2 형변환
+// 숫자형 자료끼리는 to자료형() 메서드를 사용하여 형변환이 가능했다.
+
+val a = 10L
+val b = 20
+
+val c = a.toInt() // Long을 Int로
+val d = b.toDouble() // Int를 Double로
+val e = a.toString() // Long을 String으로
+
+// 숫자 형태의 문자열을 숫자로 바꿀 때는 자바와 마찬가지로
+// Integer.parseInt()메서드 사용합니다.
+
+val intStr = "10"
+val str = Integer.parseInt(intStr)
+
+// 일반 클래스 간에 형변환을 하려면 as 키워드를 사용한다.
+
+open class Animal
+
+class Dog: Animal()
+
+val dog = Dog()
+
+val animal = dog as Animal  // dog를 Animal형으로 변환
