@@ -1,0 +1,10 @@
+// 4.17.7 with() 함수
+// with () 함수는 인수로 객체를 받고 블록에 리시버 객체로 전달한다.
+// 그리고 수행된 결과를 반환한다. 리시버 객체로 전달된 객체는 this로 접근할 수 있다.
+// this는 생략이 가능하므로 다음과 같이 쓸수 있다.
+// 안전한 호출이 불가능하여 str이 null값이 아닌 경우에만 사용해야한다.
+
+// fun <T, R> with(receiver: T, block T.() -> R): R
+val with(str) {
+    println(toUpperCase())
+}
