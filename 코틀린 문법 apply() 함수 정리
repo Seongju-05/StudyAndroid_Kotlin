@@ -1,0 +1,10 @@
+// 4.12.8 apply() 함수
+// apply() 함수는 블록에 객체 자신이 리시버 객체로 전달되고 이 객체가 반환됩니다.
+// 객체 상태를 변환시키고 그 객체를 다시 반환할 때 주로 사용한다.
+
+// fun <T> T.apply(block T.() -> Unit): T
+
+val result = car?.apply{
+    car.setColor(Color.RED)
+    car.setPrice(1000)
+}
