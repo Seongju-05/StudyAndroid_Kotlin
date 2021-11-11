@@ -1,0 +1,8 @@
+// 7.7.1.2
+// intent로 웹브라우저 띄우기
+
+val intent = Intent(intent.ACTION_SEND)
+intent.data = Uri.parse("http://www.example.com")
+if (intent.resolveActivity(packageManager) != null){
+    startActivity(intent)
+}
