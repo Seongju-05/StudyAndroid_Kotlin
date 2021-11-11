@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
 
-    // 로또 위 아이콘 설정
+<!--    로또 위 아이콘 설정-->
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -16,9 +16,10 @@
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/money_confetti"
         tools:layout_editor_absoluteX="-170dp"
-        tools:layout_editor_absoluteY="-57dp" />
+        tools:layout_editor_absoluteY="-57dp"
+        tools:ignore="MissingClass" />
 
-    // 로또 공 설정
+<!--    로또 공 설정-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,7 +32,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.44">
 
-        // 로또 공 왼쪽 1번째 공
+<!--         로또 공 왼쪽 1번째 공-->
 
         <TextView
             android:id="@+id/number1"
@@ -44,7 +45,7 @@
             android:textSize="27sp"
             android:textStyle="bold" />
 
-        // 로또 공 왼쪽 2번째 공
+<!--         로또 공 왼쪽 2번째 공-->
 
         <TextView
             android:id="@+id/number2"
@@ -57,7 +58,7 @@
             android:textSize="27sp"
             android:textStyle="bold" />
 
-        // 로또 공 왼쪽 3번째 공
+<!--         로또 공 왼쪽 3번째 공-->
 
         <TextView
             android:id="@+id/number3"
@@ -70,7 +71,7 @@
             android:textSize="27sp"
             android:textStyle="bold" />
 
-        // 로또 공 왼쪽 4번째 공
+<!--        로또 공 왼쪽 4번째 공-->
 
         <TextView
             android:id="@+id/number4"
@@ -83,7 +84,7 @@
             android:textSize="27sp"
             android:textStyle="bold" />
 
-        // 로또 공 왼쪽 5번째 공
+<!--         로또 공 왼쪽 5번째 공-->
 
         <TextView
             android:id="@+id/number5"
@@ -96,7 +97,7 @@
             android:textSize="24sp"
             android:textStyle="bold" />
 
-        // 로또 공 왼쪽 6번째 공
+<!--         로또 공 왼쪽 6번째 공-->
 
         <TextView
             android:id="@+id/number6"
@@ -111,7 +112,7 @@
 
     </LinearLayout>
 
-    // 로또 돌림판 설정
+<!--     로또 돌림판 설정-->
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lotteryButton"
         android:layout_width="400dp"
@@ -121,7 +122,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:lottie_loop="false"
-        app:lottie_autoPlay="false"/>
+        app:lottie_autoPlay="false"
+        tools:ignore="MissingClass" />
 
 
 
