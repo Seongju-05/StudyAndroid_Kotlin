@@ -1,0 +1,30 @@
+// 뷰 간격 설정
+// 뷰의 간격은 margin과 padding 속성으로 설정한다.
+// 물론 기본값이 있으면 이를 바꾸고 싶을 때 사용합니다.
+// margin, prdding 속성을 이용하면 간격이 네 방향 모두 같은 크기로 설정된다.
+// 만약 특정한 한 방향의 간격만 설정하고 싶으면 paddingLeft, paddingRight, paddingTop, paddingBouttom와
+// layout_marginTop, layout_marginBottom 속성을 이용한다.
+
+// 예
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="horizontal">
+
+<Button
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="BUTTON1"
+android:backgroundTint="#0000ff"
+android:padding="30dp" />
+
+<Button
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:textColor="BUTTON2"
+android:backgroundTint="#ff0000"
+android:paddingBottom="50dp"
+android:layout_marginLeft="50dp" />
+
+</LinearLayout>
