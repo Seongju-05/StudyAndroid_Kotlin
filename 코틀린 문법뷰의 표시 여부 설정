@@ -1,0 +1,80 @@
+// 뷰의 표시 여부 설정
+// visibility 속성은 뷰가 화면에 출력되어야 하는지를 설정한다.
+// 값을 visible, invisible, gone으로 설정하며 기본값은 visible이다.
+// visible이면 뷰가 화면에 출력되고 invisible, gone이면 화면에 출력되지 않습니다.
+// visibility 속성을 설정한다는 것은 invisible, gone으로 설정해 뷰가 화면에 보이지 않게 하려는 의도입니다.
+// invisible은 뷰가 화면에 보이지 않지만 자리는 차지하며
+// gone으로 설정하면 자리조차 차지하지 않는다.
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+
+<Button
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="BUTTON1"/>
+
+<Button
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="BUTTON2"/>
+
+<Button
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="BUTTON3"/>
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+
+<Button
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="BUTTON4"/>
+
+<Button
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="BUTTON5"
+android:visibility="invisible"/> // 자리는 남아있지만 보이지는 않음
+
+<Button
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="BUTTON6"/>
+
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+
+<Button
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="BUTTON7"/>
+
+<Button
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="BUTTON8"
+android:visibility="gone"/> // 보이지도 않고 자리를 차지하지도 않음
+
+<Button
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="BUTTON9" />
+
+</LinearLayout>
+
+</LinearLayout>
