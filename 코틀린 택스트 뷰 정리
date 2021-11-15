@@ -1,0 +1,22 @@
+// 텍스트 뷰 정리
+
+// 텍스트 뷰
+// TextView는 문자열을 화면에 출력하는 뷰이다. TextView에서 자주 이용하는 속성을 알아보자
+
+// android:text 속성
+// TextView에 출력할 문자열을 지정한다.
+// android:text = "Hello World"처럼 문자열을 대입해도 되고
+// android:text = "@string/hello"처럼 문자열 리소스를 지정해도 된다.
+
+// android:textColor 속성
+// 문자열의 색상을 지정한다
+// android:textColor = "#FF0000" 처럼 값은 16진수 RGB 형식을 사용한다.
+
+// android:textSize 속성
+// 문자열의 크기를 지정한다.
+// android:textSize = "20sp" 처럼 값은 숫자를 사용하며 단위는 생략할 수 없다.
+// 단위는 px,dp,sp등을 사용한다.
+
+// android:textStyle 속성
+// 문자열의 스타일을 지정한다.
+// android:textStyle = "bold" 처럼 이용하며 값은 bold, italic, normal 중에서 선택한다.
