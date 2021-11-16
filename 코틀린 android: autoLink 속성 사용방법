@@ -1,0 +1,33 @@
+// android:autoLink 속성 사용방법
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+
+<TextView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="@string/https_www_naver_com"
+android:autoLink="web"/>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+
+<TextView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:autoLink="web|phone"
+android:text="@string/https_www_naver_com_010_1234_5678" />
+
+<TextView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="@string/https_www_naver_com_010_1234_5678_layput_dgsw_hs_kr"
+android:autoLink="web|phone|email"/>
+
+</LinearLayout>
+
+</LinearLayout>
