@@ -1,0 +1,15 @@
+// android:maxLines 속성
+// 특정 줄까지만 나오도록 할때 maxLines를 사용한다.
+// android:maxLines="3"를 사용하면 3행까지만 출력된다.
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<TextView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="ㅇㅁㅇㄴㅁㄴㅇ"
+android:maxLines="3" /> // 문자열이 3행까지만 출력된다.
+
+</LinearLayout>
