@@ -1,0 +1,35 @@
+// android:ellipsize 속성 정리
+// maxLines 속성을 이용할 때 출력되지 않은 문자열이 더 있다는 것을 표시하려면 줄임표(...)를 넣는다.
+// 이때 ellipsize 속성을 지정한다.
+// ellipsize 속성값으로는 end,middle,start등을 설정한다.
+// end로 설정하면 문자열 뒤에 줄임표가 추가된다.
+// start와 middle은 줄임표가 각각 앞부분, 중간 부분에 추가되는데 end와 달이 singleLine = "true"
+// 속성으로 문자열을 한 줄로 출력했을 때만 적용된다.
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+
+<TextView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="남산위에 저 소나무 철갑을 두른듯바람서리 불변함은 우리기상 일세(후렴)무궁화 삼천리 화려강산 대한사람 대한으로 길이보전하세"
+android:singleLine="true"
+android:ellipsize="middle"/>
+
+<View
+android:layout_width="match_parent"
+android:layout_height="2dp"
+android:background="#000000" />
+
+<TextView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="동해물과 백두산이 마르고 닳도록하느님이 보우하사 우리나라만세(후렴)무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세남산위에 저 소나무 철갑을 두른듯
+바람서리 불변함은 우리기상 일세
+        (후렴)무궁화 삼천리 화려강산 대한사람 대한으로 길이보전하세
+"
+android:maxLines="3"
+android:ellipsize="end" />
+</LinearLayout>
