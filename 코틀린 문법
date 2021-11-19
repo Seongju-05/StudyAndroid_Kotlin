@@ -1,0 +1,13 @@
+// android src 속성
+
+// ImageView에 출력할 이미지를 설정한다.
+// ImageView에는 리소스 이미지, 파일 이미지. 네트워크 이미지등을 출력할 수 있다.
+// 리소스 이미지는 android:src = "@drawable/test2처럼 설정하면 된다.
+
+<ImageView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:background="#ff0000"
+android:src="@drawable/ic_launcher_foreground" />
+
+// 이미지 표시하기
