@@ -1,0 +1,27 @@
+// android:maxWidth, android:maxHeight, android:adjustViewBounds 속성
+
+// ImageView가 출력하는 이미지의 최대 크기를 지정한다.
+// 뷰의 크기는 layout_width,layout_height 속성으로 설정하지만 이 속성은 크기가
+// 고정되어 있어서 뷰에 넣을 이미지 크기가 다양하다면 이미지와 뷰의 크기가
+// 맞지 않는 상황이 발생할 수 있다. 또한 이미지가 클 때 layout_width, layout_height의
+// 속성갑을 wrap_content로 지정하면 뷰의 크기가 지나치게 커지는 문제가 있다.
+// maxWidth, maxHeight 속성을 이용해 뷰를 출력할 최대 크기를 지정해 주면 문제를 해결할 수 있다.
+// maxWidth, maxHeight 속성은 android:adjustViewBounds 속성과 함께 사용해야 하며,
+// 속성을 true로 설정하면 이미지의 가로세로 길이와 비례해 뷰의 크기를 맞춘다.
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<ImageView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:maxWidth="100dp"
+android:maxHeight="100dp"
+android:adjustViewBounds="true"
+android:src="@drawable/ic_launcher_background"
+android:background="#0000ff" />
+
+</LinearLayout>
+
+// 이미지 크기에 뷰의 크기 맞추기
