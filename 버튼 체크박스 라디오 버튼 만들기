@@ -1,0 +1,45 @@
+// 버튼, 체크박스, 라디오 버튼 만들기
+// CheckBox는 다중 선택을 지원하고 RadioButton은 단일 선택을 제공하는 뷰이다.
+// CheckBox는 한 화면에 여러개가 다중선택을 제공하므로 서로 영향을 미치지 않는다.
+// 중복 선택이 가능하다.
+// 하지만 라디오 버튼은 화면에 여러 개가 나오면 하나만 선택할 수 있는 단일 선택이므로 여러개를 묶어서
+// 처리해야 한다. 따라서 라디오 버튼은 RadioGroup과 함께 사용하며 그룹으로 묶은 라디오 버튼 중
+// 하나만 선택할 수 있다.
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical" >
+
+<Button
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="button1"/>
+
+<CheckBox
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="check1"/>
+
+<CheckBox
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="check2"/>
+
+<RadioGroup
+android:layout_width="wrap_content"
+android:layout_height="wrap_content">
+
+<RadioButton
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="radio1"/>
+
+<RadioButton
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="radio2"/>
+
+</RadioGroup>
+</LinearLayout>
