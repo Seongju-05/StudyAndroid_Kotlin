@@ -1,0 +1,8 @@
+// 에디트 텍스트
+
+// EditText는 사용자가 글을 입력할 수 있는 뷰입니다. EditText에서 자주 이용하는 속성을
+// 알아 보자
+
+// 1. android:lines, android: maxLines 속성
+
+// 2. android:inputType 속성
