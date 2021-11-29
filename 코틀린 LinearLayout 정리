@@ -1,0 +1,60 @@
+// LinearLayout은 뷰를 가로나 세로 방향으로 나열하는 레이아웃 클래스이다.
+// orientation이라는 속성에 horizontal이나 vertical값으로 방향을 지정한다.
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+
+// LinearLayout의 orientation 속성값을 vertical로 지정했으면 버튼을 세로로
+// 나열한다. 만약 horizontal로 지정하면 버튼을 가로로 나열한다.
+
+// LinearLayout중첩 예시
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="horizontal"
+android:padding="20dp">
+
+
+<ImageView
+android:id="@+id/imageView"
+android:layout_width="100dp"
+android:layout_height="100dp"
+android:layout_gravity="center"
+app:srcCompat="@android:drawable/ic_dialog_email" />
+
+<LinearLayout
+
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:layout_gravity="center"
+android:padding="20dp">
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="match_parent"
+android:text="카카오톡"
+android:textStyle="bold"
+android:textSize="30dp"/>
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="[기기 로그인 알림]"
+android:textStyle="normal"
+android:textSize="24dp"/>
+
+</LinearLayout>
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="9월 7일"
+android:textStyle="normal"
+android:textSize="15dp"
+android:layout_gravity="center"
+/>
+</LinearLayout>
